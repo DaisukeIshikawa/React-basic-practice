@@ -1,10 +1,18 @@
-import "./styles.css";
+import React from "react";
 
-export default function App() {
+const App = () => {
+  const onClickButton = () => alert();
+  const contentStyle = {
+    color: "blue",
+    fontSize: "18px"
+  };
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <h1 style={{ color: "red" }}>こんにちは</h1>
+      <p style={contentStyle}>お元気ですか</p>
+      <button onClick={onClickButton}>ボタン</button>
+    </>
   );
-}
+};
+
+export default App;
